@@ -1,21 +1,20 @@
-# this program asks the user to guess how many files are in the working directory
-
-answer=3
-
-echo "How many files do you think are in this drectory?"
+echo "How many files do you think are in this directory?"
 echo "(enter a number and then press enter):"
 
-while read response
+function fileguess {
+filenumber=$(ls | wc -l)
+while [[ $response -ne $filenumber ]]
 do
-
-if [[ $response -eq $answer ]]
+read response
+if [[ $response -gt $filenumber ]]
 then
-echo "Yes, $response is correct!"
-exit
-elif [[ $response -gt $answer ]]
+echo "No, there are fewer than $response files in this directory."
+elif [[ $response -lt $filenumber ]]
 then
-echo "No, there are fewer than $response files here."
-else
 echo "No, there are more than $response files in this directory."
 fi
 done
+echo "Congratulations, $response is correct!"
+}
+
+fileguess
