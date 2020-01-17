@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 echo "How many files do you think are in this directory?"
 echo "(enter a number and then press enter):"
 
