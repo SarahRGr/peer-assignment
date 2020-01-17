@@ -1,0 +1,12 @@
+echo "How many files do you think are in this drectory? (enter a number and then press enter):"
+read response
+
+if [[ $response -eq 3 ]]
+then
+echo "Yes, $response is correct!"
+elif [[ $response -gt 3 ]]
+then
+echo "No, not quite as many as $response."
+then
+echo "No, that is inc."
+fi
