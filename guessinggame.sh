@@ -1,3 +1,7 @@
-echo "Please enter a number, then press Enter:"
+echo "How many files do you think are in this drectory? (enter a number and then press enter)"
 read response
-echo "You entered $response"
+
+if [[ $response -eq 3 ]]
+then
+echo "You entered $response. That is correct!"
+fi
