@@ -5,6 +5,6 @@
 
 
 touch README.md
-echo "Guessing Game" > README.md
-echo "README.md was created $(date)" >> README.md
-echo "guessinggame.sh has 20 lines" >> README.md
+echo "# Guessing Game" > README.md
+echo "# README.md was created $(date)" >> README.md
+echo "# 20 lines" >> README.md
