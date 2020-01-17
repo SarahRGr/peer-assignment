@@ -3,5 +3,7 @@ read response
 
 if [[ $response -eq 3 ]]
 then
-echo "You entered $response. That is correct!"
+echo "Yes, $response is correct!"
+else
+echo "Nope, $response is not the right answer."
 fi
